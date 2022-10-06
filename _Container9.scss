@@ -1,0 +1,40 @@
+@import "./mixins";
+
+%Container9{
+    .container9{
+
+        width: 100%;
+        margin-top: 250px;
+
+        >.row{
+            max-width: 1050px;
+            margin: 60px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            >h5{
+                margin: 20px auto;
+                color: #87aed8;
+            }
+
+            >p{
+                margin: 10px auto;
+                color: #434345;
+                font-size: 35px;
+            }
+            
+        }
+
+
+        >.column{
+            max-width: 400px;
+            
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            
+        }
+    }
+}

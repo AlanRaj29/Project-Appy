@@ -1,0 +1,181 @@
+@import "./mixins";
+
+%Container6{
+    .container6{
+        width: 100%;
+       
+        background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+        display: flex;
+        justify-content: start;
+        padding: 40px 20px;
+        color: #ffffff;
+        flex-wrap: wrap;
+       
+    
+        
+
+        >.col1{
+            
+
+
+            >.image{
+
+                width: 200px;
+                // margin-bottom: 100px;
+                margin: auto 0px 80px 0px;
+
+                @include breakpoint(1115px){
+                    display: none;
+    
+                }
+
+            }
+
+            
+
+
+            >.image2{
+                width: 200px;
+                margin: auto auto 80px auto;
+
+                @include breakpoint(1005px){
+                    width: 150px;
+                 }
+
+                 @include breakpoint(760px){
+                    width: 225px;
+                    margin-bottom:120px;
+                 }
+
+                 @include breakpoint(588px){
+                        display: none;
+                }
+
+                
+            }
+
+            >img{
+                margin-top: 60px;
+                width: 250px;
+
+                @include breakpoint(1005px){
+                    width: 200px;
+    
+                }
+
+                @include breakpoint(760px){
+                        width: 300px;
+                }
+
+                @include breakpoint(588px){
+                    width: 400px ;
+            }
+            }
+
+
+          
+        }
+
+            >.col2{
+                display: flex;
+                flex-direction: column;
+                margin-top: 60px;
+                padding: 20px;
+                max-width: 700px;
+
+                @include breakpoint(910px){
+                    max-width: 350px;
+                        
+        
+                }
+
+               
+
+                >h5{
+                    font-size: 16px;
+                }
+
+                >h3{
+                    margin: 25px 0px;
+                    font-size: 30px;
+
+                    @include breakpoint(1115px){
+
+                        margin-right: 200px;
+                    
+                    }
+
+
+                    @include breakpoint(910px){
+                        
+        
+                    }
+
+                    
+                }
+
+                >p{
+                    font-size: 16px;
+                    margin: 10px auto;
+                    width: 250px;
+
+                    @include breakpoint(1115px){
+                        
+                        width: 450px;
+                    
+                    }
+
+                    @include breakpoint(910px){
+                        width: 300px;
+                        margin: auto 0px;
+        
+                    }
+
+                    @include breakpoint(760px){
+                        width: 575px;
+                        
+        
+                    }
+
+                    @include breakpoint(630px){
+                        width: auto;
+                    }
+                }
+
+                >.btn{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 50px;
+                    width: 160px;
+                    color: #fff;
+                    border-radius: 40px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+                    margin-top:30px;
+                    cursor: pointer;
+                    -webkit-border-radius: 40px;
+                    -moz-border-radius: 40px;
+                    -ms-border-radius: 40px;
+                    -o-border-radius: 40px;
+}
+
+                >.btn:hover{
+                    transform: scale(1.05);
+                    -webkit-transform: scale(1.05);
+                    -moz-transform: scale(1.05);
+                    -ms-transform: scale(1.05);
+                    -o-transform: scale(1.05);
+}
+
+
+
+
+            }
+
+           
+
+        }
+
+    }

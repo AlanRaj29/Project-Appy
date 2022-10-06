@@ -1,0 +1,176 @@
+@import "./mixins";
+
+%Container7 {
+    .Container7 {
+       width: 100%;
+       padding: 150px 20px;
+    //    margin-top: 50px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+ 
+       >.column {
+          display: grid;
+          grid-template-columns: 50% 50%;
+        //   grid-template-rows: 100vh;
+
+        @include breakpoint(760px) {
+
+            grid-template-columns: 1fr;
+            
+        }
+          
+        
+ 
+ 
+ 
+          >.col1 {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             box-sizing: border-box;
+             margin: auto 80px;
+             gap: 40px;
+             max-width: 1000px;
+
+             @include breakpoint(880px) {
+                margin: auto 20px;
+            }
+
+            @include breakpoint(760px) {
+                margin: auto;
+            }
+ 
+ 
+ 
+             >.font1 {
+                font-size: 16px;
+                color: #879ccb
+ 
+ 
+             }
+ 
+             >.font2 {
+                font-size: 18px;
+                color: #434345;
+                width: 350px;
+
+                @include breakpoint(760px) {
+                    width: auto;
+                }
+             }
+
+
+ 
+             >.font3 {
+                font-size: 16px;
+                color: #9590b7;
+             }
+ 
+             >.btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 160px;
+                background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+                color: #ffffff;
+                font-size: 14px;
+                border-radius: 40px;
+                
+ 
+              >.btn:hover{
+                transform: scale(1.05);
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -ms-transform: scale(1.05);
+                -o-transform: scale(1.05);
+              }
+}
+ 
+          }
+ 
+ 
+          >.col2 {
+             
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
+            // box-sizing: border-box;
+            // margin: auto 80px;
+            // gap: 40px;
+
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            width: auto;
+            justify-content: center;
+            
+            gap: 40px;
+
+            @include breakpoint(760px) {
+                margin: 50px auto;
+            }
+            
+
+            >.items{
+                display: flex;
+                
+                gap: 20px;
+
+                // &:hover>span{
+                //     color: white;
+                // }
+
+                &:hover > span > i{
+                    color: white;
+                    background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+                }
+
+                >span{
+                    color: #788afc;
+
+                    >i{
+                        height: 60px;
+                        width: 60px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192) ;
+                        
+}
+                }
+
+
+
+                >.col{
+                    display: flex;
+                    flex-direction: column;
+                    // background-color: #434345;
+                    width: 400px;
+
+                    
+
+                    @include breakpoint(880px) {
+                        width: 300px;
+                    }
+
+                    @include breakpoint(760px) {
+                        width: auto;
+                    }
+
+                    >span{
+                        margin: 5px;
+                        color: #788afc;
+                    }
+
+
+                }
+                
+            }
+            
+          }
+       }
+    }
+ }

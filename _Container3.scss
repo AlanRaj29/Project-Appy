@@ -1,0 +1,106 @@
+@import "./mixins";
+
+%Container3 {
+    .Container3 {
+       width: 100%;
+       padding: 150px 20px;
+       box-sizing: border-box;
+       display: flex;
+       justify-content: center;
+
+       @include breakpoint(950px) {
+         padding: 50px 20px;
+         
+    }
+ 
+       >.column {
+          display: grid;
+          grid-template-columns: 50% 50%;
+          
+          @include breakpoint(950px) {
+             grid-template-columns: 1fr;
+             
+        }
+      
+
+          >.col1 {
+            width: 100%;
+            background-image: url(Image/Cont3bg_img.jpg);
+  
+
+            @include breakpoint(950px) {
+        
+           }
+        
+
+            >.img {
+               max-width: 650px;
+               width: 100%;
+            }
+         }
+ 
+ 
+ 
+          >.col2 {
+             display: flex;
+             flex-direction: column;
+             justify-content: center;
+             box-sizing: border-box;
+             margin: auto 80px;
+             gap: 40px;
+             max-width: 600px;
+
+             @include breakpoint(950px) {
+               margin: 30px auto;
+               grid-template-columns: 1fr;
+               height: auto;     
+               box-sizing: border-box;
+            }
+            
+            
+ 
+ 
+ 
+             >.font1 {
+                font-size: 16px;
+                color: #8792b9;
+ 
+ 
+             }
+ 
+             >.font2 {
+                font-size: 21px;
+                color: #434345;
+             }
+ 
+             >.font3 {
+                font-size: 16px;
+                color: #9590b7;
+             }
+ 
+             >.btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 50px;
+                width: 160px;
+                background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+                color: #ffffff;
+                font-size: 14px;
+                border-radius: 40px;
+ 
+             }
+ 
+             >.btn:hover{
+
+               transform: scale(1.05);
+
+             }
+ 
+          }
+ 
+ 
+          
+       }
+    }
+ }

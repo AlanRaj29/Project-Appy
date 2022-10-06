@@ -1,0 +1,153 @@
+@import "./mixins";
+
+%Container4 {
+    .container4 {
+        width: 100%;
+        background-color: rgb(94, 136, 252);
+        color: #ffffff;
+        padding: 60px 20px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+
+
+
+        >.row {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            >h5 {
+
+                margin: 0px auto;
+            }
+
+            h3 {
+                margin: 20px auto;
+                font-size: 30px;
+                font-weight: 400;
+            }
+
+        }
+
+
+        >.column {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 30px;
+            max-width: 1500px;
+
+            @include breakpoint(1100px) {
+                grid-template-columns: 35% 30% 35%;
+            }
+
+            @include breakpoint(1000px) {
+                grid-template-columns: 50% 50%;
+            }
+
+            @include breakpoint(880px) {
+                grid-template-columns: 1fr;
+            }
+
+
+            >.items {
+                display: flex;
+                gap: 20px;
+                max-width: 400px;
+                padding: 20px;
+
+                &:hover > span {
+                    color: white;
+                }
+
+                &:hover > span > i{
+                    color: white;
+                    background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%)
+                }
+
+                >span {
+                    color: #788afc;
+
+                    >i {
+                        background-color: rgb(255, 255, 255);
+                        height: 50px;
+                        width: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        transition: all 0.5s;
+                    }
+                }
+
+
+                @include breakpoint(880px) {
+                    max-width: 100%;
+                }
+
+                .col {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        margin: 5px;
+                    }
+
+                    >span:hover {
+                        color: #ffffff;
+
+                        >i:hover {
+                            background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%)
+                        }
+                    }
+                }
+            }
+
+           
+
+            >.item2 {
+                margin-left: auto;
+            }
+
+            >.item3 {
+                grid-column-start: 2;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: 4;
+                margin: auto;
+
+                @include breakpoint(1100px) {
+                    display: none;
+                }
+
+
+                >img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+
+
+            }
+
+
+           
+
+            >.item5 {
+                margin-left: auto;
+            }
+
+
+            >.item7 {
+
+               margin-left: auto;
+
+            }
+
+        }
+    }
+}

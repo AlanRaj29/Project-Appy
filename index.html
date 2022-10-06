@@ -1,0 +1,508 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Appy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+</head>
+
+<body>
+    <main class="coverImage">
+        <section class="row">
+
+            <nav class="navbar">
+
+                <img class="left-route"
+                    src="data:image/webp;base64,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"
+                    alt="Not found">
+
+                <div class="center-route">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Features</a>
+                    <a href="#">Gallery</a>
+                    <a href="#">pricing</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contacts</a>
+                </div>
+
+
+                <section class="right-route">
+                    <p>SIGN UP</p>
+                </section>
+
+                <div class="menu">
+                    <i style="font-size:24px" class="fa">&#xf0c9;</i>
+                </div>
+
+            </nav>
+
+            <div class="row">
+                <section class="col1">
+                    <img class="image" src="Image/PhoneImage.jpg" alt="">
+                </section>
+
+                <article class="col2">
+
+                    <p class="font1">
+                        Start your amazing <br>
+                        Stuff through appy.
+                    </p>
+
+                    <p class="font2">
+                        Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor
+                        incididunt ut labore et laborused .
+                    </p>
+
+                    <div class="btn"> &#11015; DOWNLOAD APP </div>
+
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <main class="container1">
+        <article class="row">
+
+            <img src="Image/Container1.jpg" alt="">
+
+            <h5>-------- ABOUT APPY ---------</h5>
+
+            <p class="font1">A beauitful app for consectetur adipisicing elit,
+                sed do eiusmod tempor incididunt ut mollit anim di
+                est laborum .Sedut perspiciatis unde omnis
+            </p>
+
+            <p class="font2">Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Minima quia quod deleniti ducimus ullam laboriosam quisquam
+                necessitatibus ab esse officiis obcaecati.
+
+            </p>
+
+
+
+        </article>
+    </main>
+
+    <main class="container2">
+
+        <div class="column">
+
+            <article class="col1">
+
+                <h5 class="font1">
+                    OUR PROGRESS
+                </h5>
+
+                <h4 class="font2">
+                    Grat Application Ever
+
+                </h4>
+
+                <p class="font3">
+                    Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor
+                    incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore
+                    et laborused.
+                </p>
+
+                <div class="btn"> DOWNLOAD APP </div>
+
+            </article>
+
+            <section class="col2">
+
+
+
+                <img class="img" src="image/Container2.jpg" alt="">
+
+            </section>
+
+        </div>
+
+
+    </main>
+
+
+    <main class="container3">
+        <div class="column">
+            <section class="col1">
+
+                <img class="img" src="image/Container3.jpg" alt="">
+            </section>
+
+            <article class="col2">
+                <h5 class="font1">
+                    VIDEO FEATURES --------
+                </h5>
+                <h4 class="font2">
+                    Grat Application Ever
+                </h4>
+                <p class="font3">
+                    Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor
+                    incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore
+                    et laborused.
+                </p>
+                <div class="btn"> LEARN MORE </div>
+            </article>
+        </div>
+
+    </main>
+
+    <main class="container4">
+
+        <section class="row">
+
+            <h5> -------FEATURES-------</h5>
+            <h3>Powerful Features As Always</h3>
+
+        </section>
+
+
+
+        <section class="column">
+
+            <section class="items item1">
+                <span>
+                    <i class="fa fa-rocket" style="font-size:21px"></i>
+                </span>
+                <div class="col">
+                    <span> Fast & Powerful</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+            </section>
+
+
+            <section class="items item2">
+                <span>
+                    <i class="material-icons">&#xe190;</i>
+                </span>
+                <div class="col">
+                    <span>Easy Notification</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+            </section>
+
+            <section class="items item3">
+
+                <img src="https://preview.colorlib.com/theme/appy/images/xfeature-image.png.pagespeed.ic.Bct5b76uy1.webp"
+                    alt="">
+            </section>
+
+
+            <section class="items item4">
+                <span>
+                    <i class="fa fa-paperclip" style="font-size:21px"></i>
+                </span>
+                <div class="col">
+                    <span>Easily Editable</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+            </section>
+
+
+            <section class="items item5">
+                <span>
+                    <i class="fa fa-laptop" style="font-size:21px"></i>
+                </span>
+                <div class="col">
+                    <span>Fully Responsive</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+            </section>
+
+
+            <section class="items item6">
+                <span>
+                    <i class="fa fa-cloud-download" style="font-size:21x"></i>
+                </span>
+                <div class="col">
+                    <span>Clould Stroage</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+            </section>
+
+
+            <section class="items item7">
+                <span>
+                    <i class="material-icons">&#xe8b8;</i>
+                </span>
+                <div class="col">
+                    <span> Easly Editable</span>
+                    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>
+                </div>
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+    <main class="container5">
+        <article class="row">
+
+            <h5>-------- TESTIMONIALS ---------</h5>
+
+            <p>Our Client Loves US </p>
+
+        </article>
+
+        <section class="column">
+
+            <div class="col">
+
+                <img src="Image/image1.png" alt="">
+
+                <h3>Alan Raj</h3>
+                <p class="role">God Killer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet fuga, sequi hic, minus ratione
+                    natus eos earum culpa similique</p>
+
+            </div>
+
+            <div class="col">
+
+                <img src="Image/image2.png" alt="">
+
+                <h3>Clarke Griffin</h3>
+                <p class="role">Killing People</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet fuga, sequi hic, minus ratione
+                    natus eos earum culpa similique</p>
+
+
+            </div>
+
+            <div class="col">
+
+                <img src="Image/image3.png" alt="">
+
+                <h3>sky Girl</h3>
+                <p class="role">One Crew Leader</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum amet fuga, sequi hic, minus ratione
+                    natus eos earum culpa similique</p>
+
+            </div>
+
+        </section>
+    </main>
+
+
+    <main class="container6">
+
+        <section class="col1">
+
+
+            <img class="image" src="image/Cont6_img1.jpg" alt="">
+            <img class="image" src="image/Cont6_img2.jpg" alt="">
+            <img class="image2" src="image/Cont6_img3.jpg" alt="">
+            <img src="image/Container2.jpg" alt="">
+
+        </section>
+
+        <article class="col2">
+
+            <h5>SCREENSHORT----------</h5>
+
+            <h3>ScreenShort01</h3>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Rem provident eos quae harum vitae necessitatibus inventore
+                fugit. Sit dolore, iure deserunt quod ducimus, quo recusandae
+                nesciunt voluptas quidem natus dicta!</p>
+
+            <div class="btn">
+                LEARN MORE
+            </div>
+        </article>
+    </main>
+
+
+    <main class="container7">
+
+        <div class="column">
+
+            <article class="col1">
+
+                <h5 class="font1">
+                    OUR FEATURES ---------
+                </h5>
+
+                <h3 class="font2">
+                    Aour Approach of Design is Pretty Simple and Clear
+
+                </h3>
+
+                <p class="font3">
+                    Lorem ipsum dolor sit amet, consectetur adipiing elit, sed do eiusmod tempor
+                    incididunt ut labore et laborused sed do eiusmod tempor incididunt ut labore
+                    et laborused.
+                </p>
+
+                <div class="btn"> DOWNLOAD APP </div>
+
+            </article>
+
+            <section class="col2">
+
+
+                <section class="items item1">
+                    <span>
+                        <i class="material-icons">&#xe190;</i>
+                    </span>
+
+                    <div class="col">
+                        <span>Easy Notification</span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,, sed do eiusmod tempor.</span>
+                    </div>
+
+                </section>
+
+
+
+                <section class="items item2">
+                    <span>
+                        <i class="fa fa-laptop" style="font-size:21px"></i>
+                    </span>
+
+                    <div class="col">
+                        <span>Fully Responsive</span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</span>
+                    </div>
+
+                </section>
+
+                <section class="items item3">
+                    <span>
+                        <i class="material-icons">&#xe8b8;</i>
+                    </span>
+
+                    <div class="col">
+                        <span> Easly Editable</span>
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit,, sed do eiusmod tempor.</span>
+                    </div>
+
+                </section>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <main class="container8">
+
+        <div class="row">
+
+            <section class="col1">
+                <img src="Image/Container8.jpg" alt="">
+            </section>
+
+            <article class="col2">
+
+                <p class="font1">
+                    Download The App
+                </p>
+
+                <p class="font2">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam possimus eaque magnam eum
+                    praesentium unde.
+
+                </p>
+
+
+                <div class="btn">
+
+                    <section class="btn1">
+
+                        <span>
+                            <i class="fa fa-apple" style="font-size:24px">
+                                APPLE STORE
+                            </i>
+                        </span>
+
+                    </section>
+
+                    <section class="btn2">
+
+                        <span>
+                            <i class="fa fa-play-circle-o" style="font-size:24px">
+
+                                PLAY STORE
+
+                            </i>
+                        </span>
+
+                    </section>
+                </div>
+
+
+            </article>
+        </div>
+    </main>
+
+
+
+   
+
+
+
+
+
+
+        <main class="footer">
+
+            <article class="row">
+
+                <h5>------- CONTACT US -------</h5>
+                <p>Find Us By Bellow Details</p>
+
+            </article>
+
+            <section class="column">
+
+                <div class="col">
+
+                    <i class="fa fa-location-arrow" style="font-size:24px"></i>
+
+                    <p>8-54 Paya Lebar Square</p>
+                    <p>60 Paya Lebar Roa SG, Singapore</p>
+
+                </div>
+
+
+                <div class="col">
+
+                    <i class="fa fa-phone" style="font-size:24px"></i>
+
+                    <p>+65 93901336</p>
+                    <p>+65 93901337</p>
+
+                </div>
+
+
+                <div class="col">
+
+                    <i class="fa fa-mail-reply-all" style="font-size:24px"></i>
+
+                    <p>yourmail@gmail.com</p>
+                    <p>backpiper.com@gmail.com</p>
+
+                </div>
+
+
+
+            </section>
+
+        </main>
+
+
+
+
+
+</body>
+
+</html>

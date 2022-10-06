@@ -1,0 +1,150 @@
+@import "./mixins";
+
+%Container8 {
+    .container8 {
+
+        height: 88%;
+        background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+        margin-top: 100px;
+
+        >.row {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px; 
+
+            
+            >.col1{
+
+                @include breakpoint(990px) {
+                    display: none;
+                     
+                }
+     
+                >img {
+
+                    margin-top: -150px;
+
+
+                }
+            }
+
+            >.col2 {
+                display: flex;
+                flex-direction: column;
+                margin-top: 40px;
+                padding: 20px;
+                max-width: 700px;
+                color: aliceblue;
+
+                >.font1 {
+                    font-size: 30px;
+                }
+
+                >.font2 {
+                    margin: 30px auto;
+                    font-size: 16px;
+                }
+
+                >.btn {
+
+                    margin-top: 50px;
+                    display: flex;
+
+                    @include breakpoint(990px) {
+
+                      
+                        @include breakpoint(490px) {
+                            display: block;
+                             
+                        }
+                         
+                    }
+
+                    .btn1{
+
+                   
+                    >span {
+                        color: #768ede;
+
+                        &:hover{
+                            color: #fff;
+                        }
+
+                        >i {
+                            height: 60px;
+                            width: 200px;
+                            background-color: aliceblue;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight: 50;
+                            gap: 10px;
+                            padding: 5px;
+
+                            &:hover{
+                                background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+
+                            }
+                            
+                        }
+
+                    }
+
+                }
+
+                >.btn2{
+
+                    margin-left: 10px;
+
+                    @include breakpoint(490px) {
+                        margin-left: 0px;
+                       margin-top: 20px;
+                         
+                    }
+
+                    >span {
+                        color: #768ede;
+
+                        &:hover{
+                            color: #fff;
+                        }
+
+                        >i {
+                           
+                            height: 60px;
+                            width: 200px;
+                            background-color: aliceblue;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-weight: 50;
+                            gap: 10px;
+                            padding: 5px;
+                            
+                            &:hover{
+                                background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
+
+                            }
+                        }
+
+                    }
+
+
+                }
+
+                  
+
+                }
+
+
+            }
+
+
+
+        }
+
+
+    }
+}

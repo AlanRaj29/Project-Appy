@@ -1,0 +1,59 @@
+@import "./mixins";
+
+%Container1 {
+  
+  .container1 {
+    margin: 150px auto;
+    width: 100%;
+    
+    padding: 20px;
+    box-sizing: border-box;
+
+    @include breakpoint(700px) {
+     margin: 10px auto;
+  }
+
+    >.row {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      >img {
+        margin: auto;
+      }
+
+      > h5 {
+        margin: 20px auto;
+        color: #8790c1;
+        
+      }
+
+      >.font1 {
+        font-size: 30px;
+        margin: 20px auto;
+        color: #5e88fc;
+
+        @include breakpoint(800px) {
+          
+         font-size: 20px;
+      }
+      }
+
+      >.font2{
+        margin: 20px auto;
+        color: #8790af;
+
+        @include breakpoint(800px) {
+          
+          font-size: 16px;
+      }
+      }
+
+    }
+
+  }
+}
