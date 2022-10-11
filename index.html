@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -42,11 +43,12 @@
             </nav>
 
             <div class="row">
-                <section class="col1">
+                <section class="col1" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom">
                     <img class="image" src="Image/mobile-image.jpg" alt="">
                 </section>
 
-                <article class="col2">
+                <article class="col2" data-aos="zoom-in">
 
                     <p class="font1">
                         Start your amazing <br>
@@ -66,7 +68,7 @@
     </main>
 
     <main class="container1">
-        <article class="row">
+        <article class="row" data-aos="zoom-in">
 
             <img src="Image/Container1.jpg" alt="">
 
@@ -117,7 +119,7 @@
 
 
 
-                <img class="img" src="Image/Container2.jpg" alt="">
+                <img class="img" data-aos="zoom-in-left" src="Image/Container2.jpg" alt="">
 
             </section>
 
@@ -500,7 +502,10 @@
         </main>
 
 
-
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
 
 
 </body>
