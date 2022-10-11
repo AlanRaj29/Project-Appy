@@ -306,6 +306,7 @@ body .Container3 > .column {
 body .Container3 > .column > .col1 {
   width: 100%;
   background-image: url(Image/Container3.jpg);
+  background-repeat: no-repeat;
 }
 body .Container3 > .column > .col1 > .img {
   max-width: 650px;
