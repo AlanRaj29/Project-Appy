@@ -2,21 +2,22 @@
 
 %CoverImage {
     .coverImage {
-        height: 100vh;
+        height: auto;
+        min-height: 100vh;
         background-image: url("Image/appy.jpg");
 
         @include breakpoint(700px) {
-            height: fit-content;
+            height: auto;
 
         }
 
         >.row {
             width: 100%;
-            height: 100%;
+            height: auto;
             background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
 
             @include breakpoint(700px) {
-                height: fit-content;
+                height: auto;
 
             }
 
