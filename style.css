@@ -74,8 +74,7 @@ body .coverImage > .row .navbar .menu {
 }
 
 body .coverImage {
-  height: auto;
-  min-height: 100vh;
+  height: 100vh;
   background-image: url("Image/appy.jpg");
 }
 @media (max-width: 700px) {
@@ -84,8 +83,8 @@ body .coverImage {
   }
 }
 body .coverImage > .row {
-  height: auto;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
 }
 @media (max-width: 700px) {
@@ -885,8 +884,6 @@ body .container8 > .row > .col2 > .btn > .btn2 > span > i:hover {
 
 body .container9 {
   width: 100%;
-  height: auto;
-  min-height: 100vh;
   margin-top: 250px;
 }
 body .container9 > .row {
