@@ -264,7 +264,7 @@ body .Container2 > .column > .col1 > .btn:hover {
 }
 body .Container2 > .column > .col2 {
   width: 100%;
-  background-image: url(image/Cont2bg_img.jpg);
+  background-image: url("Image/Cont2bg.jpg");
   position: relative;
 }
 @media (max-width: 900px) {
@@ -305,7 +305,7 @@ body .Container3 > .column {
 }
 body .Container3 > .column > .col1 {
   width: 100%;
-  background-image: url(Image/Cont3bg_img.jpg);
+  background-image: url(Image/Container3.jpg);
 }
 body .Container3 > .column > .col1 > .img {
   max-width: 650px;
