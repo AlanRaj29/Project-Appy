@@ -79,7 +79,7 @@ body .coverImage {
 }
 @media (max-width: 700px) {
   body .coverImage {
-    height: auto;
+    height: 100%;
   }
 }
 body .coverImage > .row {
@@ -89,7 +89,7 @@ body .coverImage > .row {
 }
 @media (max-width: 700px) {
   body .coverImage > .row {
-    height: auto;
+    height: 100%;
   }
 }
 body .coverImage > .row > .row {
