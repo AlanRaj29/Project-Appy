@@ -79,7 +79,9 @@ body .coverImage {
 }
 @media (max-width: 700px) {
   body .coverImage {
-    height: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 body .coverImage > .row {
@@ -89,7 +91,9 @@ body .coverImage > .row {
 }
 @media (max-width: 700px) {
   body .coverImage > .row {
-    height: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 body .coverImage > .row > .row {

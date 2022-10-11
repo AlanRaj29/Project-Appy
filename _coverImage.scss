@@ -6,7 +6,7 @@
         background-image: url("Image/appy.jpg");
 
         @include breakpoint(700px) {
-            height: 100%;
+            height: fit-content;
 
         }
 
@@ -16,7 +16,7 @@
             background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
 
             @include breakpoint(700px) {
-                height: 100%;
+                height: fit-content;
 
             }
 
