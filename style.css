@@ -885,6 +885,8 @@ body .container8 > .row > .col2 > .btn > .btn2 > span > i:hover {
 
 body .container9 {
   width: 100%;
+  height: auto;
+  min-height: 100vh;
   margin-top: 250px;
 }
 body .container9 > .row {
