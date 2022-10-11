@@ -13,7 +13,7 @@
 
         >.row {
             width: 100%;
-            height: auto;
+            height: 100%;
             background: linear-gradient(45deg, rgba(74, 44, 191, 0.73) 20%, rgba(106, 198, 240, 0.81) 100%);
 
             @include breakpoint(700px) {
