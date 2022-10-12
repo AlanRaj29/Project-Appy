@@ -2,7 +2,7 @@
 
 %CoverImage {
     .coverImage {
-        height: 100vh;
+        height: auto;
         background-image: url("Image/appy.jpg");
 
         @include breakpoint(700px) {
